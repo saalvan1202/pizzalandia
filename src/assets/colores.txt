@@ -1,0 +1,4 @@
+amarillo=#f1c15b
+moradoclaro=#846cbc
+moradoOscuro=#846cbc
+morado=#5b44a2
