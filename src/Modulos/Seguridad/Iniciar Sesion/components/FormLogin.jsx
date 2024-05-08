@@ -5,7 +5,10 @@ import { useForm } from "react-hook-form";
 import { Button } from "@/components/ui/button";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPizzaSlice } from "@fortawesome/free-solid-svg-icons";
 import Formulario from "./Formulario";
+
 const FormSchema = z.object({
   username: z.string().min(8, {
     message: "8 Dígitos",
@@ -44,8 +47,9 @@ export default function FormLogin() {
               form={form}
               nameLabel="Contraseña:"
               parametros="password"
+              type="password"
             />
-            <h2>¿Olvisdas tu contraseña?</h2>
+            <Button type="button">¿Olvisdaste tu contraseña?</Button>
           </div>
           <div className="login-sesion_buton">
             <Button type="submit">Enviar</Button>
