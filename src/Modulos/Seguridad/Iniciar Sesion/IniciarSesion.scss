@@ -1,0 +1,21 @@
+.login {
+  display: grid;
+  place-items: center;
+  //justify-content: center;
+  //align-items: center;
+  background-color: #5b44a2;
+  background-image: url("../../../assets/img/loginB.jpg");
+  background-position: center; //Para la imagen se centre
+  background-size: cover; //Para que la imagen ocupe todo el espacio, según su tamaño
+  height: 100vh;
+
+  &::before {
+    content: ""; //El before sirve para ponerle un capa de negro a la imagen de fon
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Color negro con 30% de opacidad */
+  }
+}
