@@ -2,7 +2,7 @@
   //position: relative;
   display: grid;
   z-index: 0;
-  grid-template-rows: 2fr 4fr 0.8fr 0.5fr;
+  grid-template-rows: 2fr 3fr 1fr 1fr;
   width: 550px;
   height: 510px;
   // background-color: transparent;
@@ -28,6 +28,7 @@
   &_inputs {
     color: #f1c15b;
     padding: 0px 60px 0px 50px;
+    margin-top: 40px;
     .space-y-2 {
       margin-top: 30px;
     }
@@ -45,16 +46,8 @@
     h2 {
       color: #fff;
     }
-    button {
-      color: #ffffff;
-      padding: 0;
-      font-size: 13px;
-      height: 5px;
-    }
   }
   &_buton {
-    display: flex;
-    place-content: center;
     padding-top: 10px;
     button {
       font-size: 22px;
@@ -65,8 +58,6 @@
     }
   }
   &_crear {
-    display: grid;
-    place-content: center;
     margin: 0;
     color: #ffffff;
   }

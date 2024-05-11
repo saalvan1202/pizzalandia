@@ -1,11 +1,13 @@
 import React from "react";
-import "./IniciarSesion.scss";
 import FormLogin from "./components/FormLogin";
+import FondoPrincipal from "./components/FondoPrincipal";
 
 export default function IniciarSesion() {
   return (
-    <div className="login">
-      <FormLogin />
-    </div>
+    <>
+      <FondoPrincipal>
+        <FormLogin />
+      </FondoPrincipal>
+    </>
   );
 }

@@ -1,1 +1,1 @@
-export { default } from "./IniciarSesion";
+export { default } from "./IniciarSesion.jsx";

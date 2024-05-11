@@ -1,5 +1,5 @@
 import React from "react";
-import "./FormLogin.scss";
+import "./FormRestablecer.scss";
 import { Form } from "@/components/ui/form";
 import { useForm } from "react-hook-form";
 import { Button } from "@/components/ui/button";
@@ -11,20 +11,16 @@ import Formulario from "./Formulario";
 import { Link } from "react-router-dom";
 
 const FormSchema = z.object({
-  username: z.string().min(8, {
-    message: "8 Dígitos",
-  }),
-  password: z.string().min(8, {
+  mail: z.string().min(8, {
     message: "8 Dígitos",
   }),
 });
 
-export default function FormLogin() {
+export default function FormRestablecer() {
   const form = useForm({
     resolver: zodResolver(FormSchema),
     defaultValues: {
-      username: "",
-      password: "",
+      mail: "",
     },
   });
   function onSubmit(values) {
@@ -36,25 +32,16 @@ export default function FormLogin() {
         <div className="login-sesion">
           <div className="login-sesion_titulo">
             <div className="login-sesion_titulo-uno">
-              <h1>INICIAR SESION</h1>
-              <h2>¡Bienvenido!</h2>
+              <h1>Restablecer Contraseña</h1>
+              <h2>PIZZALANDIA</h2>
             </div>
           </div>
           <div className="login-sesion_inputs">
             <Formulario
               form={form}
-              nameLabel="Usuario:"
-              parametros="username"
+              nameLabel="Correo Electrónico:"
+              parametros="mail"
             />
-            <Formulario
-              form={form}
-              nameLabel="Contraseña:"
-              parametros="password"
-              type="password"
-            />
-            <Link to="http://localhost:5173/login/restablecer-contraseña">
-              <Button type="button">¿Olvidaste tu contraseña?</Button>
-            </Link>
           </div>
           <div className="login-sesion_buton">
             <Button className="login-sesion_buton-crear" type="submit">
@@ -62,8 +49,8 @@ export default function FormLogin() {
             </Button>
           </div>
           <div className="login-sesion_crear">
-            <Link to="http://localhost:5173/login/create-user">
-              <Button type="button">¡Registrate!</Button>
+            <Link to="http://localhost:5173/login">
+              <Button type="button">Volver</Button>
             </Link>
           </div>
         </div>
