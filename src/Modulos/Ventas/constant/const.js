@@ -127,3 +127,26 @@ export const navigation = {
     { name: "Ofertas", href: "#" },
   ],
 };
+
+export const products = [
+  {
+    id: 1,
+    name: "Hawaiana",
+    href: "#",
+    imageSrc:
+      "https://cdn2.cocinadelirante.com/800x600/filters:format(jpg):quality(75)/sites/default/files/images/2019/11/como-hacer-pizza-hawaiana.jpg",
+    imageAlt: "Front of men's Basic Tee in black.",
+    price: "S/ 60",
+    color: "Mediana",
+  },
+  {
+    id: 2,
+    name: "Peperoni",
+    href: "#",
+    imageSrc:
+      "https://img.freepik.com/vector-premium/ilustracion-arte-vectorial-pizza-completa-realista_984715-59.jpg",
+    imageAlt: "Front of men's Basic Tee in black.",
+    price: "S/ 70",
+    color: "Grande",
+  },
+];
